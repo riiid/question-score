@@ -1,0 +1,6 @@
+torch
+transformers 
+pytorch_lightning
+ast
+omegaconf
+numpy
