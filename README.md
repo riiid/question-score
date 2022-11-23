@@ -4,7 +4,8 @@ Repository for KDA(Knowledge-dependent Answerability), EMNLP 2022 work
 # How to use
 
 ```
-pip install -e .
+pip install --upgrade pip
+pip install question-score
 ```
 
 ```python
