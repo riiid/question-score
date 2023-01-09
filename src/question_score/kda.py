@@ -125,7 +125,6 @@ class KDA:
             loss = loss.view(tgt_tokens.shape[0], -1)
             loss = loss.sum(dim=1) / tgt_len
             result_dict[key] = [-x.item() for x in loss]
-        print(result_dict)
         if res is not None:
             res[model_name] = result_dict
         return result_dict
@@ -174,7 +173,6 @@ class KDA:
                 }
                 output = kda_model(batch)  # batch size is 1
                 result_dict[key] = output.logits.detach().tolist()[0]
-        print(result_dict)
         if res is not None:
             res[model_name] = result_dict
         return result_dict
