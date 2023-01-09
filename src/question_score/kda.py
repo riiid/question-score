@@ -192,7 +192,7 @@ class KDA:
             processes = []
             for model_name in model_list:
                 process = mp.Process(
-                    target=self.infer_model, args=(model_name, *self.models[model_name], p, q, ops, answer_idx, res)
+                    target=self.infer_model, args=(model_name, *self.models[model_name], p, q, ops, res)
                 )
                 process.start()
                 processes.append(process)
@@ -202,7 +202,7 @@ class KDA:
 
         res = {}
         for model_name in model_list:
-            res[model_name] = self.infer_model(model_name, *self.models[model_name], p, q, ops, answer_idx)
+            res[model_name] = self.infer_model(model_name, *self.models[model_name], p, q, ops)
         return res
 
     def calc_kda(self, p, q, ops, answer_idx, model_list, do_multiprocess, is_disc=False):
