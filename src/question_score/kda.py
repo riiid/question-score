@@ -244,7 +244,7 @@ class KDA:
 
 
 if __name__ == "__main__":
-    kda = KDA("large")
+    kda = KDA("small")
     print("model load complete")
     print(kda.kda_large("Puppy is a baby of dog.", "What is the term for baby dog?", ["cat", "puppy", "kitty", "cow"],
                         answer_idx=1))
