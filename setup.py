@@ -5,10 +5,15 @@ with open("README.md", "r", encoding="utf-8") as fh:
     
 setup(
     name="question_score",
-    version="0.0.3",
+    version="0.0.5",
     description="library for question evaluation including KDA, Knowledge Dependent Answerability introduced in EMNLP 2022 work.",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    install_requires=[
+        "transformers",
+        "sentencepiece",
+        "pytorch-lightning",
+    ],
     author="Riiid NLP team",
     author_email="ai_nlp@riiid.co",
     url="https://github.com/riiid/question-score",
