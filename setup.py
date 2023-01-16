@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     
 setup(
     name="question_score",
-    version="0.0.5",
+    version="0.0.6",
     description="library for question evaluation including KDA, Knowledge Dependent Answerability introduced in EMNLP 2022 work.",
     long_description=long_description,
     long_description_content_type="text/markdown",
