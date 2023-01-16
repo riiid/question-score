@@ -234,7 +234,7 @@ class KDA:
         return self.calc_kda(p, q, ops, answer_idx, KDA_FULL, do_multiprocess, True)
 
     def kda_large(self, p: str, q: str, ops: List[str], answer_idx: int, do_multiprocess: Optional[bool] = False):
-        if len(self.model_list) < len(KDA_FULL):
+        if len(self.model_list) < len(KDA_LARGE):
             warnings.warn("KDA_large needs more models, so reload 6 more models")
             self.__init__(mode='large')
         return self.calc_kda(p, q, ops, answer_idx, KDA_LARGE, do_multiprocess, False)
