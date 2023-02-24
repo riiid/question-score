@@ -23,7 +23,7 @@ print(
 
 # What does the score mean?
 
-You can check the explanation of KDA on https://arxiv.org/abs/2211.11902 now.
+You can check the explanation of KDA on [EMNLP 2022 paper](https://aclanthology.org/2022.emnlp-main.718/) now.
 The official link from EMNLP 2022 will soon be released.
 
 You can use $KDA_{small}$ or $KDA_{large}$ instead of heavy metric using all model.
